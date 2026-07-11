@@ -2,6 +2,8 @@
 
 KOPVERSE is a gamified web-based learning platform designed to introduce the concept of **Koperasi Desa Merah Putih (KDMP)** through interactive business simulation. Players start by creating and managing a virtual bakery while completing daily missions, earning rewards, and learning how cooperative ecosystems operate in a fun and engaging way.
 
+Prototype: [Kopverse Prototype](https://www.figma.com/proto/WSsJKe0yZUTMNKMvI9YsMC/Kopverse?node-id=10-22&p=f&t=gmKjXwhrigr4dMLc-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=10%3A22)
+
 ---
 
 # Technology Architecture

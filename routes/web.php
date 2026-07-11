@@ -27,3 +27,25 @@ Route::get('/home', function () {
 Route::get('/kdmp', function () {
     return view('kdmp.index');
 });
+
+Route::get('/kdmp/store', function () {
+    return view('kdmp.store');
+});
+
+Route::get('/kdmp/savings', function () {
+    return view('kdmp.savings');
+});
+
+Route::get('/kdmp/financing', function () {
+    return view('kdmp.financing');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+})->middleware('auth');
+
+Route::post('/logout', [App\Http\Controllers\AuthController::class, 'logout']);
+
+Route::get('/bakery/detail', function () {
+    return view('bakery.detail');
+})->middleware('auth');

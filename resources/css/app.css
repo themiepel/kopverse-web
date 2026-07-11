@@ -263,12 +263,46 @@ input.error {
 
 /* ====================== KDMP SERVICE UTILITIES ====================== */
 
-/* Shadow tombol menu cokelat (Savings & Financing) */
 .btn-kdmp-orange-shadow {
     box-shadow: 0 -9px 0 0 #A04B00 inset;
 }
 
-/* Shadow untuk baris menu Store krem */
 .btn-kdmp-cream-shadow {
     box-shadow: 0 -9px 0 0 rgba(177, 131, 55, 0.56) inset;
+}
+
+/* ====================== STORE UTILITIES ====================== */
+
+.store-card-shadow {
+    box-shadow: 0 -9px 0 0 #FF9C45 inset;
+}
+
+.store-icon-shadow {
+    box-shadow: 0 5px 0 0 #E48F2E inset;
+}
+
+.store-total-shadow {
+    box-shadow: 0 2px 4px 3px rgba(0, 0, 0, 0.20) inset;
+}
+
+/* ====================== SAVING (SALDO SIMPANAN) UTILITIES ====================== */
+
+.saving-balance-shadow {
+    box-shadow: 0 -9px 0 0 #FF9C45 inset;
+}
+
+/* ====================== FINANCING (PEMINJAMAN) UTILITIES ====================== */
+
+.financing-top-shadow {
+    box-shadow: 0 -9px 0 0 #A85E1C inset;
+}
+
+.text-stroke-small-brown {
+    text-shadow: 0 1.5px 0 #794017;
+    -webkit-text-stroke: 1.5px #794017;
+}
+
+.text-stroke-thin-blue {
+    text-shadow: 0 2px 0 #3B4E7D;
+    -webkit-text-stroke: 1px #3B4E7D;
 }
