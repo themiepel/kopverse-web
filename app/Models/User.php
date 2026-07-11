@@ -33,4 +33,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function bakery()
+    {
+        return $this->hasOne(BakeryProfile::class);
+    }
 }

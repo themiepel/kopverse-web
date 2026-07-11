@@ -87,11 +87,17 @@
                         <form id="form-bakery" action="/bakery/create" method="POST"
                             class="w-full flex flex-col items-center space-y-5">
                             @csrf
+
                             <div class="w-full relative">
                                 <input type="text" name="bakery_name" placeholder="name bakery" required
                                     class="w-full h-12 bg-[#5D3E24] border-3 border-[#49220E] rounded-[12px] px-3 text-[#DABB86] font-game text-[20px] placeholder-[#DABB86]/40 text-center focus:outline-none shadow-[inset_0_4px_4px_rgba(0,0,0,0.3)]">
                             </div>
-
+                            @error('bakery_name')
+                                <p class="mt-2 text-red-600 text-sm font-game text-center">
+                                    {{ $message }}
+                                </p>
+                            @enderror
+                            <input id="roleInput" type="hidden" name="role" value="bakery">
                             <button type="submit"
                                 class="flex w-[141px] h-[66px] px-4 py-1.5 justify-center items-center rounded-[10px] border-4 border-[#49220E] bg-gradient-to-b from-[#B0B325] to-[#859D0D] shadow-[0_4px_0_0_#472211] btn-game-active cursor-pointer">
                                 <span
@@ -153,8 +159,8 @@
                     lock.id = 'lock-icon';
                     lock.className = 'absolute inset-0 flex items-center justify-center';
                     lock.innerHTML = `<div class="bg-white/80 border-4 border-[#49220E] p-3 rounded-2xl shadow-lg">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#49220E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4zm5 4v2"></path></svg>
-                                      </div>`;
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#49220E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4zm5 4v2"></path></svg>
+                                                          </div>`;
                     contentEl.appendChild(lock);
                 }
             } else {
@@ -167,13 +173,18 @@
                 if (lockIcon) lockIcon.remove();
             }
         }
-
-        // Pindah ke Sub-Laman Pengisian Nama Toko Roti
         function goToNameBakery() {
-            if (roles[currentIdx].locked) return;
+
+            const role = roles[currentIdx];
+
+            if (role.locked) return;
+
+            document.getElementById('roleInput').value = role.id;
 
             document.getElementById('step-choose-role').classList.add('hidden');
+
             document.getElementById('step-name-bakery').classList.remove('hidden');
+
         }
 
         // Inisialisasi awal saat halaman dimuat

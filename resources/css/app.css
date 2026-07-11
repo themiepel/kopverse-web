@@ -37,7 +37,6 @@
     }
 }
 
-
 .text-stroke-thick {
     text-shadow: 0 2px 0 #794017;
     -webkit-text-stroke: 3px #794017;
@@ -125,3 +124,151 @@ input.error {
     transform: scale(0.98) translateY(0px);
 }
 
+/* ===================== HOME ===================== */
+
+.text-stroke-home {
+    text-shadow: 0 2px 0 #794017;
+    -webkit-text-stroke: 2px #794017;
+}
+
+.text-stroke-home-small {
+    text-shadow: 0 1px 0 #794017;
+    -webkit-text-stroke: 1px #794017;
+}
+
+.home-header {
+    border-radius: 29px;
+    border: 2px solid #452113;
+    background: #c87920;
+    box-shadow: inset 0 -6px 0 rgba(143, 54, 13, 0.56);
+}
+
+.coin-box {
+    width: 59px;
+    height: 27px;
+    border-radius: 10px;
+    border: 2px solid #452113;
+    background: #ffe4b6;
+    box-shadow: 0 2px 0 #452113;
+}
+
+.level-progress-bg {
+    border-radius: 12px;
+    border: 3px solid #a36a3b;
+    background: #5d3e24;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.level-progress-fill {
+    background: linear-gradient(180deg, #9bd64a 0%, #426900 100%);
+    box-shadow:
+        inset 0 2px 0 rgba(255, 255, 255, 0.35),
+        0 2px 0 #314f00;
+}
+
+.home-bakery-card {
+    position: relative;
+    border-radius: 29px;
+
+    border: 2px solid #452113;
+
+    background: #ff8700;
+
+    box-shadow: inset 0 -9px 0 rgba(177, 131, 55, 0.56);
+}
+
+/* ====================== DAILY QUEST ====================== */
+
+.quest-board {
+    border-radius: 32px;
+    border: 4px solid #452113;
+    background: #855300;
+    box-shadow: 0 6px 0 #472211;
+}
+
+.quest-inner {
+    border-radius: 24px;
+    background: #ffbd5a;
+    box-shadow: inset 0 -3px 0 #a65922;
+}
+
+.quest-title {
+    border-radius: 10px;
+    border: 4px solid #3b4e7d;
+
+    background: linear-gradient(180deg, #869eed 0%, #5789ff 100%);
+
+    box-shadow: 0 4px 0 #3b4e7d;
+}
+
+.quest-progress-bg {
+    border-radius: 12px;
+
+    border: 3px solid #a36a3b;
+
+    background: #5d3e24;
+
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.quest-progress-fill {
+    border-radius: 999px;
+
+    background: linear-gradient(180deg, #9bd64a 0%, #426900 100%);
+}
+
+.quest-item {
+    border-radius: 17px;
+
+    background: #ffbd5a;
+
+    box-shadow: inset 0 -3px 0 #a65922;
+}
+
+.quest-mini-progress {
+    width: 187px;
+
+    height: 30px;
+
+    border-radius: 12px;
+
+    border: 3px solid #5d3e24;
+
+    background: #cc6e2a;
+
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.quest-claim {
+    border-radius: 10px;
+
+    border: 2px solid #794017;
+
+    background: linear-gradient(180deg, #ffe4b6 0%, #f59e0b 100%);
+
+    box-shadow: 0 3px 0 #794017;
+}
+
+.quest-claim span {
+    background: linear-gradient(180deg, #ffffff 30%, #ffa308 191%);
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    text-shadow: 0 1px 0 #794017;
+
+    -webkit-text-stroke: 1.5px #794017;
+}
+
+/* ====================== KDMP SERVICE UTILITIES ====================== */
+
+/* Shadow tombol menu cokelat (Savings & Financing) */
+.btn-kdmp-orange-shadow {
+    box-shadow: 0 -9px 0 0 #A04B00 inset;
+}
+
+/* Shadow untuk baris menu Store krem */
+.btn-kdmp-cream-shadow {
+    box-shadow: 0 -9px 0 0 rgba(177, 131, 55, 0.56) inset;
+}
